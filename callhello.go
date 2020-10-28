@@ -25,7 +25,7 @@ func main() {
 
 }
 
-// create function for encode JSON format
+// create function for JSON format
 
 func HelloWorld(w http.ResponseWriter, r *http.Request) {
 
