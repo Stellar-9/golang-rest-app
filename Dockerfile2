@@ -1,0 +1,13 @@
+FROM golang:1.15.2-buster
+
+ENV PORT=9090
+
+WORKDIR /src
+
+COPY callhello src/callhello
+
+RUN go get -d github.com/gorilla/mux
+
+CMD ["src/callhello"]
+
+EXPOSE 9090
